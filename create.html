@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="create-styles.css" />
+    <title>Create Your Sentence</title>
+  </head>
+  <body>
+    <header>
+      <h2>Randomrator</h2>
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="index.html">Get a random sentence</a></li>
+          <li><a href="create.html">Make your own</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="custom-sentence">
+        <h3>Create Your Own Sentence</h3>
+        <form id="sentence-form">
+          <label for="name">Subject</label>
+          <input type="text" id="name" placeholder="Enter a name" required />
+
+          <label for="verb">Verb</label>
+          <input type="text" id="verb" placeholder="Enter an action" required />
+
+          <label for="object">Object</label>
+          <input type="text" id="object" placeholder="Enter an object" required />
+
+          <button id="submit-button">Generate Sentence</button>
+        </form>
+        <p id="output"></p>
+      </div>
+    </main>
+    <footer>
+      <h4>Copyright &#169 2024 Nik-Pit</h4>
+    </footer>
+    <script src="script-create.js"></script>
+  </body>
+</html>
